@@ -31,4 +31,6 @@ object Main2 extends App {
   makeCoffee(new Coffeine)
     makeCoffee(new NoCoffeine)
 
+  println("test")
+
 }
