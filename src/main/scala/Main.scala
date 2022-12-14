@@ -38,4 +38,5 @@ object Main extends App {
   }.toList
 
   println(cards)
+  println("test")
 }
