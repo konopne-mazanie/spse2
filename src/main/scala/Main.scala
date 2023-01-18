@@ -15,7 +15,9 @@ object Main extends App {
     val number: Long,
     val cvc: Int,
     val owner: String,
-    val credit: Int
+    val credit: Int,
+    val company: String,
+    val color: String
   ) extends Card {
     val limit = 1000
   }
@@ -32,7 +34,7 @@ object Main extends App {
     val csvVals = line.split(",")
 
     if (csvVals(0) == "g")
-      new GoldCard(csvVals(1).toLong, csvVals(2).toInt, csvVals(3), csvVals(4).toInt)
+      new GoldCard(csvVals(1).toLong, csvVals(2).toInt, csvVals(3), csvVals(4).toInt, "visa", "red")
     else
       new BlueCard(csvVals(1).toLong, csvVals(2).toInt, csvVals(3), csvVals(4).toInt)
   }.toList
